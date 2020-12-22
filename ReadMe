@@ -9,7 +9,7 @@ Pour cet exemple, nous entraînons un modèle de jouet à l'aide du jeu de donn�
 
 python train.py
 
-Cela génère un modèle pickle dans un fichier nommé chrunlog_r.pk.
+Cela génère un modèle pickle dans un fichier nommé chrunlog_r.pkl.
 
 2. Créez une image Docker contenant Flask et le modèle
 Construisez une image ( docker build) appelée msellami/sklearn-flask-docker ( --tag msellami/sklearn-flask-docker) à partir du Dockerfile ( .).

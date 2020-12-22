@@ -22,7 +22,7 @@ COPY app.py __init__.py /app/
 
 # Copy chrunlog_r.pkl outside the container
 # to /app/ inside the container
-COPY chrunlog_r.pk /app/
+COPY chrunlog_r.pkl /app/
 
 # Expose the container's port 3333
 EXPOSE 3333
