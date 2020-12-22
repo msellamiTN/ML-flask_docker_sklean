@@ -7,7 +7,7 @@ from math import log10
 from flask import Flask
 from flask import request
 from flask import jsonify
-from sklearn import linear_model
+from sklearn.linear_model import LogisticRegression
 from sklearn.externals import joblib
 from sklearn import preprocessing
 
