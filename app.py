@@ -15,7 +15,7 @@ from sklearn import preprocessing
 app = Flask(__name__)
 
 # Load pickled model file
-model = joblib.load('chrunlog_r.pk')
+model = joblib.load('chrunlog_r.pkl')
 
 # Create an API end point
 @app.route('/api/v1.0/predict', methods=['GET'])
