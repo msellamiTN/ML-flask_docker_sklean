@@ -25,7 +25,7 @@ COPY app.py __init__.py /app/
 COPY chrunlog_r.pkl /app/
 
 # Expose the container's port 3333
-EXPOSE 3333
+EXPOSE 80
 
 # When the container starts, run this
 ENTRYPOINT python ./app.py
