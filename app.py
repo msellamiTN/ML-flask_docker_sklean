@@ -28,6 +28,10 @@ class NumpyEncoder(json.JSONEncoder):
 # Load pickled model file
 model = joblib.load('chrunlog_r.pkl')
 y=np.array([0,1])
+@app.route("/")
+def hello():
+    print("Handling request to home page.")
+    return "Hello, Azure!"
 # Create an API end point
 @app.route('/api/v1.0/predict', methods=['GET'])
 def get_prediction(trained_model=model):
@@ -58,4 +62,4 @@ def get_prediction(trained_model=model):
 
 if __name__ == '__main__':
     # Run the app at 0.0.0.0:3333
-    app.run(port=3333,host='0.0.0.0')
+    app.run(port=80,host='0.0.0.0')
